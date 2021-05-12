@@ -1,7 +1,7 @@
 header{
+  font-weight: bold;
   .up{
     background-color: #0282F9;
-    font-weight: bold;
     color: #fff;
     font-size: 0.9em;
     @include py(3px);
@@ -16,6 +16,43 @@ header{
     }
   }
   .menu{
+    font-size: 1.3em;
+    @include py(20px);
 
+    .container{
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 80px;
+      }
+      ul{
+        li{
+          margin: 0 15px;
+          width: calc(100% / 10) - 25px;
+          i{
+            color: #0282F9;
+            font-size: 0.7em;
+          }
+        }
+      }
+      .search{
+        border-bottom: 2px solid #0282F9;
+        width: 140px;
+        @include py(2px);
+        justify-content: flex-end;
+        input{
+          border: none;
+          width: 100px;
+          margin-right: 5px;
+          &::placeholder{
+            text-align: right;
+            color: #000;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: bold;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
   }
 }

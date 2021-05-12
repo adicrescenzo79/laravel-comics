@@ -472,9 +472,11 @@ body {
   text-transform: capitalize;
 }
 
+header {
+  font-weight: bold;
+}
 header .up {
   background-color: #0282F9;
-  font-weight: bold;
   color: #fff;
   font-size: 0.9em;
   padding-top: 3px;
@@ -485,4 +487,57 @@ header .up .container {
 }
 header .up .container ul li {
   margin-left: 80px;
+}
+header .menu {
+  font-size: 1.3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header .menu .container {
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu .container img {
+  width: 80px;
+}
+header .menu .container ul li {
+  margin: 0 15px;
+  width: calc(100% / 10)-25px;
+}
+header .menu .container ul li i {
+  color: #0282F9;
+  font-size: 0.7em;
+}
+header .menu .container .search {
+  border-bottom: 2px solid #0282F9;
+  width: 140px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  justify-content: flex-end;
+}
+header .menu .container .search input {
+  border: none;
+  width: 100px;
+  margin-right: 5px;
+}
+header .menu .container .search input::-moz-placeholder {
+  text-align: right;
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+header .menu .container .search input:-ms-input-placeholder {
+  text-align: right;
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+header .menu .container .search input::placeholder {
+  text-align: right;
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
 }
