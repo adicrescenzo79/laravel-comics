@@ -472,6 +472,10 @@ body {
   text-transform: capitalize;
 }
 
+.mt-1 {
+  margin-top: 1em;
+}
+
 header {
   font-weight: bold;
 }
@@ -561,4 +565,11 @@ main #home h2 {
   font-size: 2.5em;
   display: inline-block;
   margin-top: -2.2em;
+}
+main #home .card {
+  margin: 2em 0;
+}
+main #home .card .cover {
+  width: 100%;
+  padding-top: 100%;
 }

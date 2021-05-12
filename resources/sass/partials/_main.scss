@@ -11,5 +11,12 @@ main{
       display: inline-block;
       margin-top: -2.2em;
     }
+    .card{
+      margin: 2em 0;
+      .cover{
+        width: 100%;
+        padding-top: 100%;
+      }
+    }
   }
 }
