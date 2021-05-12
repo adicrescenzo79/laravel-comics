@@ -471,3 +471,18 @@ body {
 .txt-capitalize {
   text-transform: capitalize;
 }
+
+header .up {
+  background-color: #0282F9;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.9em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+header .up .container {
+  justify-content: flex-end;
+}
+header .up .container ul li {
+  margin-left: 80px;
+}

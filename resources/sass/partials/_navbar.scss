@@ -1,0 +1,21 @@
+header{
+  .up{
+    background-color: #0282F9;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9em;
+    @include py(3px);
+    .container{
+      justify-content: flex-end;
+
+      ul{
+        li{
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+  .menu{
+
+  }
+}
