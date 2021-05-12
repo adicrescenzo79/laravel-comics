@@ -2,7 +2,47 @@
 @section('content')
 
 
-main
+<div id="home">
+  <div class="container">
+    <h2 class="titolo txt-uppercase">current series</h2>
+
+    @foreach ($volumi as $volume)
+      <p>{{$volume->title}}</p>
+    @endforeach
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 

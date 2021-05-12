@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
     <title>TITOLO</title>
   </head>
-  <body>
+  <body class="debug">
     @include('partials.header')
 
 
