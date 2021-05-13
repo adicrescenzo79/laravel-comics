@@ -91,7 +91,7 @@
                 </div>
                 <div class="flex riga doppia">
                   <span class="title">On Sale Date:</span>
-                  <span>{{$volume['sale_date']}}</span>
+                  <span>{{ date('M j, Y', strtotime($volume['sale_date']))}}</span>
                 </div>
 
               </div>
@@ -100,7 +100,7 @@
           </div>
         </div>
       </section>
-
+//
 
 
 

@@ -683,6 +683,7 @@ main #comic .trama .container .advertisement {
 main #comic .details {
   color: #003f5e;
   background-color: #F6F6F6;
+  padding-bottom: 6em;
 }
 main #comic .details h2 {
   font-size: 1.6em;
