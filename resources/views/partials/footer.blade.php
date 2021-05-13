@@ -11,7 +11,7 @@
         <li>
           <a href="#">
             <img src="/img/buy-comics-merchandise.png" alt="">
-            <spanclass="txt-uppercase">dc merchandise</span>
+            <span class="txt-uppercase">dc merchandise</span>
           </a>
         </li>
         <li>
