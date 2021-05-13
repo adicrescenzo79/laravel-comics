@@ -2,6 +2,7 @@ main{
   #home{
     color: #fff;
     background-color: #1C1C1C;
+    padding-bottom: 1.5em;
     h2{
       background-color: #0282F9;
       width: auto;
@@ -16,6 +17,15 @@ main{
       .cover{
         width: 100%;
         padding-top: 100%;
+      }
+    }
+    .load{
+      justify-content: center;
+      a.more{
+        padding: 0.5em 5em;
+        font-weight: bold;
+        background-color: #0282F9;
+        margin: 0 auto;
       }
     }
   }

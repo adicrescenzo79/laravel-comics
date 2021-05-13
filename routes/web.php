@@ -17,3 +17,9 @@ Route::get('/', function () {
   $database = config('comics');
   return view('home')->with('volumi', $database);
 });
+
+
+Route::get('/comic', function () {
+  $database = config('comics');
+  return view('comic')->with('volumi', $database);
+});

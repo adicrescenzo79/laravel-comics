@@ -9,7 +9,7 @@
     <div class="row">
       @foreach ($volumi as $key => $volume)
         <div class="col-lg-2">
-          <a href="/">
+          <a href="/comic?id={{$key}}">
             <div class="card">
               <div class="cover" style="background-image:url('{{$volume['thumb']}}');">
               </div>
@@ -18,6 +18,11 @@
           </a>
         </div>
       @endforeach
+    </div>
+
+    <div class="load flex">
+      <a class="more txt-uppercase" href="#">load more</a>
+
     </div>
 
 
