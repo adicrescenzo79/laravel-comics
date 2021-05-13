@@ -19,7 +19,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/comic', function () {
-  $database = config('comics');
-  return view('comic')->with('volumi', $database);
-});
+Route::get('/comic/{id}', function ($id) {
+  $comics = config('comics');
+  $comic = $comics[$id];
+
+  return view('comic')->with('volume', $comic);
+})->name('comic');

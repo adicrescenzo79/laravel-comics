@@ -1,16 +1,20 @@
 @extends('layouts.app')
+
+
+@section('title')
+  {{$volume['series']}}
+@endsection
+
 @section('content')
 
-  @php
-    $id = $_GET['id'];
-    $volume = $volumi[$id];
-  @endphp
+
+
 
 
   <div id="comic">
 
 
-
+    <p>{{$volume['title']}}</p>
 
 
 

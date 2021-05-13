@@ -1,4 +1,9 @@
 @extends('layouts.app')
+
+@section('title')
+  Home
+@endsection
+
 @section('content')
 
 
@@ -9,7 +14,7 @@
     <div class="row">
       @foreach ($volumi as $key => $volume)
         <div class="col-lg-2">
-          <a href="/comic?id={{$key}}">
+          <a href="{{route('comic',['id' => $key])}}">
             <div class="card">
               <div class="cover" style="background-image:url('{{$volume['thumb']}}');">
               </div>

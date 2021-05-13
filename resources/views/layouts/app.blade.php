@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
-    <title>@php $titolo @endphp</title>
+    <title>@yield('title')</title>
   </head>
   <body class="">
     @include('partials.header')
