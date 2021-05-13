@@ -42,7 +42,6 @@ footer{
         a{
           color: #0282F9;
           opacity: 1;
-
         }
       }
       .colonna{
@@ -55,6 +54,10 @@ footer{
         li{
           opacity: 0.5;
           margin: 0.2em 0;
+          &:hover{
+            opacity: 1;
+            color: #0282F9;
+          }
         }
       }
     }
@@ -75,10 +78,18 @@ footer{
         border: 2px solid #0282F9;
         background-color: inherit;
         color: #fff;
+        transition: background-color 0.5s;
+        &:hover{
+          background-color: #0282F9;
+          cursor: pointer;
+        }
       }
       .social{
         color: #0282F9;
         align-items: center;
+        a{
+          cursor: pointer;
+        }
         &>*{
           margin-left: 1em;
         }

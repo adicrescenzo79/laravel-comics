@@ -16,7 +16,7 @@
         <img class="logo" src="/img/dc-logo.png" alt="logo">
         <ul class="txt-uppercase flex">
           <li><a href="#">characters</a></li>
-          <li><a href="#">comics</a></li>
+          <li class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}"><a href="#">comics</a></li>
           <li><a href="#">movies</a></li>
           <li><a href="#">tv</a></li>
           <li><a href="#">games</a></li>

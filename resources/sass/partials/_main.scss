@@ -29,4 +29,45 @@ main{
       }
     }
   }
+  #comic{
+    .blu{
+      background-color: #0282F9;
+    }
+    .container{
+      width: 55%;
+      h1{
+        color: #003f5e;
+        font-size: 2.4em;
+      }
+      .table{
+        background-color: #55BA59;
+        color: #fff;
+        span{
+
+          opacity: 0.8;
+        }
+        font-weight: bold;
+        font-size: 1.1em;
+        height: 50px;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        align-items: center;
+        .price-av{
+          width: 70%;
+          justify-content: space-between;
+          padding: 0 20px;
+        }
+        .available{
+          border-left: 1px solid #000;
+          height: 100%;
+          align-items: center;
+          width: 30%;
+          justify-content: center;
+          i{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
 }

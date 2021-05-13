@@ -33,12 +33,21 @@ header{
         width: 80px;
       }
       ul{
-        height: 100%;
         li{
-          height: 100%;
           margin: 0 15px;
           width: calc(100% / 10) - 25px;
-          border-bottom: 4px solid #0282F9;
+          padding: 40px 0;
+          border-bottom: 4px solid #fff;
+          transition: border-bottom 0.5s;
+          &.active{
+            border-bottom: 4px solid #0282F9;
+            color: #0282F9;
+          }
+          &:hover{
+            border-bottom: 4px solid #0282F9;
+            color: #0282F9;
+
+          }
 
           i{
             color: #0282F9;
@@ -52,6 +61,7 @@ header{
         @include py(2px);
         justify-content: flex-end;
         input{
+          outline: none;
           border: none;
           width: 100px;
           margin-right: 5px;

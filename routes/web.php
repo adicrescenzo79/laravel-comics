@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   $database = config('comics');
   return view('home')->with('volumi', $database);
-});
+})->name('home');
 
 
 Route::get('/comic/{id}', function ($id) {
