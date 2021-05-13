@@ -4,20 +4,27 @@ header{
     background-color: #0282F9;
     color: #fff;
     font-size: 0.9em;
-    @include py(3px);
+    // @include py(3px);
     .container{
       justify-content: flex-end;
 
+      height: 100%;
+
       ul{
+        height: 100%;
         li{
           margin-left: 80px;
+          height: 100%;
+          &:hover{
+            background-color: #5caaf2;
+          }
         }
       }
     }
   }
   .menu{
     font-size: 1.3em;
-    @include py(20px);
+    // @include py(20px);
 
     .container{
       justify-content: space-between;
@@ -26,9 +33,13 @@ header{
         width: 80px;
       }
       ul{
+        height: 100%;
         li{
+          height: 100%;
           margin: 0 15px;
           width: calc(100% / 10) - 25px;
+          border-bottom: 4px solid #0282F9;
+
           i{
             color: #0282F9;
             font-size: 0.7em;
