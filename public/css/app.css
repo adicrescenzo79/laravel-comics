@@ -476,6 +476,14 @@ body {
   margin-top: 1em;
 }
 
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
 header {
   font-weight: bold;
 }
@@ -599,19 +607,40 @@ main #home .load a.more {
   background-color: #0282F9;
   margin: 0 auto;
 }
-main #comic .blu {
-  background-color: #0282F9;
-}
 main #comic .container {
   width: 55%;
 }
-main #comic .container h1 {
+main #comic .blu {
+  background-color: #0282F9;
+  height: 75px;
+}
+main #comic .trama {
+  padding: 5em 0;
+}
+main #comic .trama .container {
+  position: relative;
+}
+main #comic .trama .container .thumb {
+  position: absolute;
+  top: -28em;
+}
+main #comic .trama .container .thumb span {
+  background-color: #00A9D9;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+main #comic .trama .container h1 {
   color: #003f5e;
   font-size: 2.4em;
 }
-main #comic .container .table {
+main #comic .trama .container .table {
   background-color: #55BA59;
   color: #fff;
+  margin: 1em 0;
   font-weight: bold;
   font-size: 1.1em;
   height: 50px;
@@ -619,23 +648,73 @@ main #comic .container .table {
   border-bottom: 1px solid #000;
   align-items: center;
 }
-main #comic .container .table span {
-  opacity: 0.8;
+main #comic .trama .container .table span {
+  opacity: 0.6;
 }
-main #comic .container .table .price-av {
+main #comic .trama .container .table span.white {
+  opacity: 1;
+}
+main #comic .trama .container .table .price-av {
   width: 70%;
   justify-content: space-between;
   padding: 0 20px;
 }
-main #comic .container .table .available {
+main #comic .trama .container .table .available {
   border-left: 1px solid #000;
   height: 100%;
   align-items: center;
   width: 30%;
   justify-content: center;
 }
-main #comic .container .table .available i {
+main #comic .trama .container .table .available i {
   margin-left: 10px;
+}
+main #comic .trama .container p {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #555;
+}
+main #comic .trama .container .advertisement {
+  color: #555;
+  font-weight: bold;
+  right: -5.5em;
+  top: -1.5em;
+}
+main #comic .details {
+  color: #003f5e;
+  background-color: #F6F6F6;
+}
+main #comic .details h2 {
+  font-size: 1.6em;
+  padding: 1em 0;
+}
+main #comic .details .riga {
+  border-top: 1px solid #e3e3e3;
+  padding: 0.5em 0;
+}
+main #comic .details .riga.doppia {
+  border-bottom: 1px solid #e3e3e3;
+}
+main #comic .details .title {
+  width: 300px;
+}
+main #comic .details span {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+main #comic .details .list {
+  flex-wrap: wrap;
+  width: 600px;
+}
+main #comic .details .list span:after {
+  content: ",";
+}
+main #comic .details .list span:last-of-type:after {
+  content: "";
+}
+main #comic .details a {
+  color: #00a9d9;
+  cursor: pointer;
 }
 
 footer {
